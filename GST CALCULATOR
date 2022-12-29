@@ -1,0 +1,16 @@
+# Calculate GST when both base price and GST rate is known
+
+base_price = float(input("Enter the base price: "))
+gst_rate = float(input("Enter the GST rate (%): "))
+
+# Calculate the GST amount
+gst_amount = base_price * gst_rate / 100
+
+# Calculate the total price
+total_price = base_price + gst_amount
+
+# Print the results
+print("Base Price: Rs.", base_price)
+print("GST Rate:", gst_rate, "%")
+print("GST Amount: Rs.", round(gst_amount, 2))
+print("Total Price (including GST): Rs.",round(total_price, 2))
